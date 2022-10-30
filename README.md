@@ -38,6 +38,26 @@ nix flake new --template .#base NEW_TEMPLATE
 
 Add the template to the list above.
 
+### Updating templates
+
+Some of the components need updating from time to time.
+This section describes the steps to do that.
+
+#### Upgrade nix-direnv
+
+All templates come with a [nix-direnv](https://github.com/nix-community/nix-direnv) initialization in `.envrc` to make sure the generated projects are self-contained.
+This makes projects usable without installing nix-direnv on the machine manually.
+
+The nix-direnv version in `.envrc` is pinned, so it needs updating from time to time.
+
+Run the following command to update nix-direnv to a [specific version](https://github.com/nix-community/nix-direnv/releases):
+
+```shell
+update-envrc 2.1.2
+```
+
+Review the changes then commit, push and open a PR.
+
 
 ## Credits
 
