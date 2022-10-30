@@ -1,0 +1,24 @@
+version: '3'
+
+tasks:
+  build:
+    cmds:
+      - echo "Build complete"
+
+  test:
+    deps: [build]
+    cmds:
+      - echo "Tests ran successfully"
+
+  lint:
+    cmds:
+      - echo "All files look good"
+
+  check:
+    cmds:
+      - task: test
+      - task: lint
+
+  fmt:
+    cmds:
+      - echo "All files look good"

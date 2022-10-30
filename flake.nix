@@ -13,6 +13,21 @@
           path = ./base;
           description = "A basic project template";
         };
+        base-dev = {
+          path = ./base-dev;
+          description = "A basic project template targeted at development";
+          welcomeText = ''
+            Choose a task runner for your project in flake.nix!
+
+            Configure GitHub Actions according to your chosen task runner:
+
+            ```shell
+            # Given you chose go-task:
+            mv .github/workflows/ci-task.yaml .github/workflows/ci.yaml
+            rm .github/workflows/ci-make.yaml
+            ```
+          '';
+        };
       };
     } // flake-utils.lib.eachDefaultSystem (system:
       let

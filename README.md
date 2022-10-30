@@ -21,9 +21,10 @@ nix flake new --template github:sagikazarmark/nix-templates#TEMPLATE NEW_PROJECT
 
 ## Templates
 
-| Template       | Description              |
-|----------------|--------------------------|
-| [base](./base) | A basic project template |
+| Template               | Description                                      |
+|------------------------|--------------------------------------------------|
+| [base](./base)         | A basic project template                         |
+| [base-dev](./base-dev) | A basic project template targeted at development |
 
 
 ## Development
