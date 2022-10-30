@@ -8,7 +8,7 @@ This repository contains a list of project templates to be used with the `nix fl
 ## Usage
 
 If you like any of the templates in this repository,
-you can easily start a new project from them with the following commands:
+you can easily start a new project from them with the one of the following commands:
 
 ```shell
 # Initialize in the current directory
