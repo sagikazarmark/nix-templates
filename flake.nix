@@ -28,6 +28,17 @@
             ```
           '';
         };
+        go-simple-cli = {
+          path = ./go-simple-cli;
+          description = "A simple Go CLI template";
+          welcomeText = ''
+            Update your module path using the following command:
+
+            ```shell
+            go mod edit --module github.com/YOURNAME/YOURMODULE
+            ```
+          '';
+        };
       };
     } // flake-utils.lib.eachDefaultSystem (system:
       let

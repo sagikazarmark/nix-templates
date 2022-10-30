@@ -1,0 +1,41 @@
+version: '3'
+
+vars:
+  BUILD_DIR: build
+
+tasks:
+  build-dir:
+    internal: true
+    cmds:
+      - cmd: mkdir -p {{.BUILD_DIR}}
+        silent: true
+
+  build:
+    deps: [build-dir]
+    cmds:
+      - go build -o ./{{.BUILD_DIR}}/ .
+    sources:
+      - "*.go"
+
+  run:
+    deps: [build]
+    cmds:
+      - ./build/go-simple-cli
+
+  test:
+    deps: [build]
+    cmds:
+      - go test -v -race ./...
+
+  lint:
+    cmds:
+      - golangci-lint run
+
+  check:
+    cmds:
+      - task: test
+      - task: lint
+
+  fmt:
+    cmds:
+      - golangci-lint run --fix

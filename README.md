@@ -21,10 +21,11 @@ nix flake new --template github:sagikazarmark/nix-templates#TEMPLATE NEW_PROJECT
 
 ## Templates
 
-| Template               | Description                                      |
-|------------------------|--------------------------------------------------|
-| [base](./base)         | A basic project template                         |
-| [base-dev](./base-dev) | A basic project template targeted at development |
+| Template                         | Description                                      |
+|----------------------------------|--------------------------------------------------|
+| [base](./base)                   | A basic project template                         |
+| [base-dev](./base-dev)           | A basic project template targeted at development |
+| [go-simple-cli](./go-simple-cli) | A simple Go CLI template                         |
 
 
 ## Development
