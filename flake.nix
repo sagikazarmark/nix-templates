@@ -8,6 +8,11 @@
 
   outputs = { self, nixpkgs, flake-utils }:
     {
-      templates = { };
+      templates = {
+        base = {
+          path = ./base;
+          description = "A basic project template";
+        };
+      };
     };
 }

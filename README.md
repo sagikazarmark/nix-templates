@@ -18,6 +18,27 @@ nix flake init --template github:sagikazarmark/nix-templates#TEMPLATE
 nix flake new --template github:sagikazarmark/nix-templates#TEMPLATE NEW_PROJECT
 ```
 
+
+## Templates
+
+| Template       | Description              |
+|----------------|--------------------------|
+| [base](./base) | A basic project template |
+
+
+## Development
+
+### Creating a new template
+
+Use the `base` template to scaffold a new template:
+
+```shell
+nix flake new --template .#base NEW_TEMPLATE
+```
+
+Add the template to the list above.
+
+
 ## Credits
 
 Check out the [Official Nix templates](https://github.com/NixOS/templates) for more examples.
