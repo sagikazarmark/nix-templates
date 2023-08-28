@@ -34,6 +34,10 @@
               ```
             '';
           };
+          base-kube = {
+            path = ./base-kube;
+            description = "A basic project template with Kubernetes tools";
+          };
           go-simple-cli = {
             path = ./go-simple-cli;
             description = "A simple Go CLI template";
