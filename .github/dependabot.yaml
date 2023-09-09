@@ -2,6 +2,6 @@ version: 2
 
 updates:
   - package-ecosystem: github-actions
-    directory: /go-simple-cli
+    directory: /go-simple-cli/.github/workflows
     schedule:
       interval: daily
