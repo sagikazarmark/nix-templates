@@ -38,6 +38,17 @@
             path = ./base-kube;
             description = "A basic project template with Kubernetes tools";
           };
+          go-library = {
+            path = ./go-library;
+            description = "A Go library template";
+            welcomeText = ''
+              Update your module path using the following command:
+
+              ```shell
+              go mod edit --module github.com/YOURNAME/YOURMODULE
+              ```
+            '';
+          };
           go-simple-cli = {
             path = ./go-simple-cli;
             description = "A simple Go CLI template";
