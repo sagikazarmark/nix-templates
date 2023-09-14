@@ -18,6 +18,8 @@ After creating the project, update the README below.
 ---
 # MY PROJECT
 
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/YOURNAME/YOURMODULE/ci.yaml?style=flat-square)](https://github.com/YOURNAME/YOURMODULE/actions/workflows/ci.yaml)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/YOURNAME/YOURMODULE/badge?style=flat-square)](https://api.securityscorecards.dev/projects/github.com/YOURNAME/YOURMODULE)
 [![built with nix](https://builtwithnix.org/badge.svg)](https://builtwithnix.org)
 
 My project description.

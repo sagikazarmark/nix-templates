@@ -46,6 +46,7 @@
 
               ```shell
               go mod edit --module github.com/YOURNAME/YOURMODULE
+              sed -i \'\' 's|YOURNAME/YOURMODULE|<insert YOURNAME/YOURMODULE here>|g' README.md
               ```
             '';
           };
@@ -57,6 +58,7 @@
 
               ```shell
               go mod edit --module github.com/YOURNAME/YOURMODULE
+              sed -i \'\' 's|YOURNAME/YOURMODULE|<insert YOURNAME/YOURMODULE here>|g' README.md
               ```
             '';
           };
