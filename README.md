@@ -27,6 +27,7 @@ nix flake new --template github:sagikazarmark/nix-templates#TEMPLATE NEW_PROJECT
 | [base-dev](./base-dev)           | A basic project template targeted at development |
 | [base-kube](./base-kube)         | A basic project template with Kubernetes tools   |
 | [go-library](./go-library)       | A Go library template                            |
+| [go-service](./go-service)       | A Go service template                            |
 | [go-simple-cli](./go-simple-cli) | A simple Go CLI template                         |
 
 

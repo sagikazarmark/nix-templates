@@ -51,6 +51,19 @@
               ```
             '';
           };
+          go-service = {
+            path = ./go-service;
+            description = "A Go service template";
+            welcomeText = ''
+              Update your module path using the following command:
+
+              ```shell
+              go mod edit --module github.com/YOURNAME/YOURMODULE
+              sed -i \'\' 's|YOURNAME/YOURMODULE|<insert YOURNAME/YOURMODULE here>|g' README.md
+              sed -i \'\' 's|YOURNAME/YOURMODULE|<insert YOURNAME/YOURMODULE here>|g' .golangci.yaml
+              ```
+            '';
+          };
           go-simple-cli = {
             path = ./go-simple-cli;
             description = "A simple Go CLI template";

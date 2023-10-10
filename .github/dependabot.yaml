@@ -6,6 +6,16 @@ updates:
     schedule:
       interval: daily
 
+  - package-ecosystem: docker
+    directory: /go-service/
+    schedule:
+      interval: daily
+
+  - package-ecosystem: github-actions
+    directory: /go-service/.github/workflows
+    schedule:
+      interval: daily
+
   - package-ecosystem: github-actions
     directory: /go-simple-cli/.github/workflows
     schedule:
