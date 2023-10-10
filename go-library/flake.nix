@@ -1,6 +1,4 @@
 {
-  description = "A Go library template";
-
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     flake-parts.url = "github:hercules-ci/flake-parts";
@@ -37,6 +35,14 @@
 
             languages = {
               go.package = pkgs.go_1_20;
+            };
+          };
+
+          ci_1_21 = {
+            imports = [ devenv.shells.ci ];
+
+            languages = {
+              go.package = pkgs.go_1_21;
             };
           };
         };

@@ -22,18 +22,17 @@ After creating the project, update the README below.
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/YOURNAME/YOURMODULE/badge?style=flat-square)](https://api.securityscorecards.dev/projects/github.com/YOURNAME/YOURMODULE)
 [![built with nix](https://builtwithnix.org/badge.svg)](https://builtwithnix.org)
 
-My project description.
-
+**My project description.**
 
 ## Usage
 
 Some usage information.
 
-
 ## Development
 
-Instructions for development (if any).
+**For an optimal developer experience, it is recommended to install [Nix](https://nixos.org/download.html) and [direnv](https://direnv.net/docs/installation.html).**
 
+Instructions for development (if any).
 
 ## License
 

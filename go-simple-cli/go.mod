@@ -1,3 +1,3 @@
 module github.com/sagikazarmark/nix-templates/go-simple-cli
 
-go 1.19
+go 1.21

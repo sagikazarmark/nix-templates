@@ -47,6 +47,7 @@
               ```shell
               go mod edit --module github.com/YOURNAME/YOURMODULE
               sed -i \'\' 's|YOURNAME/YOURMODULE|<insert YOURNAME/YOURMODULE here>|g' README.md
+              sed -i \'\' 's|YOURNAME/YOURMODULE|<insert YOURNAME/YOURMODULE here>|g' .golangci.yaml
               ```
             '';
           };
@@ -59,6 +60,7 @@
               ```shell
               go mod edit --module github.com/YOURNAME/YOURMODULE
               sed -i \'\' 's|YOURNAME/YOURMODULE|<insert YOURNAME/YOURMODULE here>|g' README.md
+              sed -i \'\' 's|YOURNAME/YOURMODULE|<insert YOURNAME/YOURMODULE here>|g' .golangci.yaml
               ```
             '';
           };
