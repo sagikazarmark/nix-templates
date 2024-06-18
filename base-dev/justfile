@@ -1,0 +1,22 @@
+[private]
+default:
+  @just --list
+
+# build project
+build:
+	@echo "Build complete"
+
+# run tests
+test: build
+	@echo "Tests ran successfully"
+
+# run linters
+lint:
+	@echo "All files look good"
+
+# run all checks
+check: test lint
+
+# reformat code
+fmt:
+	@echo "All files look good"

@@ -22,6 +22,7 @@
               # Choose your task runner
               gnumake
               go-task
+              just
             ];
 
             # https://github.com/cachix/devenv/issues/528#issuecomment-1556108767
